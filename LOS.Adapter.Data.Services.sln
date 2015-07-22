@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOS.Adapter.Data.Services", "LOS.Adapter.Repository\LOS.Adapter.Data.Services.csproj", "{DA86FF1D-2D1C-4749-B0AD-EACBEA135389}"
+EndProject
+Project("{85F619EE-C78D-42B0-BF7E-261A02623F29}") = "LOS.Adapter.Data.HIS", "LOS.Adapter.Data.HIS\LOS.Adapter.Data.HIS.tiproj", "{8FCAD1C1-9E53-4923-A3F5-F3C28EF761FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOS.Adapter.Data.Services.Tests", "LOS.Adapter.Data.ServicesTests\LOS.Adapter.Data.Services.Tests.csproj", "{937E3247-5DDF-44D9-B613-914045180C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOS.Adapter.CQS", "LOS.Adapter.CQS\LOS.Adapter.CQS.csproj", "{17D91889-302A-4DDF-9BD8-C1DF04B549B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture", "Architecture", "{0037ED79-48FE-42AE-A194-C7B44152394A}"
+	ProjectSection(SolutionItems) = preProject
+		Architecture\GetCollateralForObligor.sequencediagram = Architecture\GetCollateralForObligor.sequencediagram
+		Architecture\LOS.Data.Services_Data_Exchange_Pattern.png = Architecture\LOS.Data.Services_Data_Exchange_Pattern.png
+		Architecture\OpenBatch.dgml = Architecture\OpenBatch.dgml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ga016a1af:8080/tfs/tfs-pilot
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LOS.Adapter.CQS\\LOS.Adapter.CQS.csproj
+		SccProjectName1 = LOS.Adapter.CQS
+		SccLocalPath1 = LOS.Adapter.CQS
+		SccProjectUniqueName2 = LOS.Adapter.Data.ServicesTests\\LOS.Adapter.Data.Services.Tests.csproj
+		SccProjectName2 = LOS.Adapter.Data.ServicesTests
+		SccLocalPath2 = LOS.Adapter.Data.ServicesTests
+		SccProjectUniqueName3 = LOS.Adapter.Repository\\LOS.Adapter.Data.Services.csproj
+		SccProjectName3 = LOS.Adapter.Repository
+		SccLocalPath3 = LOS.Adapter.Repository
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA86FF1D-2D1C-4749-B0AD-EACBEA135389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA86FF1D-2D1C-4749-B0AD-EACBEA135389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA86FF1D-2D1C-4749-B0AD-EACBEA135389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA86FF1D-2D1C-4749-B0AD-EACBEA135389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937E3247-5DDF-44D9-B613-914045180C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937E3247-5DDF-44D9-B613-914045180C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937E3247-5DDF-44D9-B613-914045180C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937E3247-5DDF-44D9-B613-914045180C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D91889-302A-4DDF-9BD8-C1DF04B549B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D91889-302A-4DDF-9BD8-C1DF04B549B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D91889-302A-4DDF-9BD8-C1DF04B549B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D91889-302A-4DDF-9BD8-C1DF04B549B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

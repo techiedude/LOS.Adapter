@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://microsoft.com/HostApplications/TI/WIP" targetNamespace="http://microsoft.com/HostApplications/TI/WIP">
+  <xs:element name="CollateralServicesContext__Collateral__CreateCollateralTie__Request" nillable="true" type="TypeCreateCollateralTieRequest" />
+  <xs:element name="CollateralServicesContext__Collateral__CreateCollateralTie__Response" nillable="true" type="TypeCreateCollateralTieResponse" />
+  <xs:complexType name="TypeCreateCollateralTieRequest">
+    <xs:sequence>
+      <xs:element name="CreateCollateralTieInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_FAILED_SW" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FAILING_OCCURS_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_1192_FIELDS" type="ArrayOfREQUEST_1192_FIELDS_CollateralServicesContext_ICollateral_CreateCollateralTie_REQUEST_1192_FIELDS" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_1392_FIELDS" type="ArrayOfREQUEST_1392_FIELDS_CollateralServicesContext_ICollateral_CreateCollateralTie_REQUEST_1392_FIELDS" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeCreateCollateralTieResponse">
+    <xs:sequence>
+      <xs:element name="CreateCollateralTieOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_FAILED_SW" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FAILING_OCCURS_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_1192_FIELDS" type="ArrayOfREQUEST_1192_FIELDS_CollateralServicesContext_ICollateral_CreateCollateralTie_REQUEST_1192_FIELDS" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_1392_FIELDS" type="ArrayOfREQUEST_1392_FIELDS_CollateralServicesContext_ICollateral_CreateCollateralTie_REQUEST_1392_FIELDS" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="CollateralServicesContext__Collateral__CreateCollateral__Request" nillable="true" type="TypeCreateCollateralRequest" />
+  <xs:element name="CollateralServicesContext__Collateral__CreateCollateral__Response" nillable="true" type="TypeCreateCollateralResponse" />
+  <xs:complexType name="TypeCreateCollateralRequest">
+    <xs:sequence>
+      <xs:element name="CreateCollateralInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_RESTRICTIONS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_FUNCTION_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_CUSIP_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_COLL_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_ADVANCE_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_REG_U_ADV_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_NBR_UNITS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_UNIT_PRICE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_NBR_PIECES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DESCRIPTION1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DESCRIPTION2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_LOCATION_RCVD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_LOCATION_HELD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_EFF_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DATE_RCVD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_EXPIRE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_SAFEKEEPING_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_MAX_LEND_VALUE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DDA_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_COUPON_FREQ" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_NEXT_COUPON_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_FIRST_COUPON_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_REGULAR_COUPON_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_GEOTRAC_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_GEOTRAC_IND" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeCreateCollateralResponse">
+    <xs:sequence>
+      <xs:element name="CreateCollateralOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_RESTRICTIONS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_FUNCTION_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_CUSIP_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_COLL_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_ADVANCE_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_REG_U_ADV_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_NBR_UNITS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_UNIT_PRICE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_NBR_PIECES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DESCRIPTION1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DESCRIPTION2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_LOCATION_RCVD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_LOCATION_HELD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_EFF_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DATE_RCVD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_EXPIRE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_SAFEKEEPING_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_MAX_LEND_VALUE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1501_DDA_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_COUPON_FREQ" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_NEXT_COUPON_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_FIRST_COUPON_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_REGULAR_COUPON_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_GEOTRAC_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1508_GEOTRAC_IND" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfREQUEST_1392_FIELDS_CollateralServicesContext_ICollateral_CreateCollateralTie_REQUEST_1392_FIELDS">
+     <xs:sequence>
+        <xs:element minOccurs="10" maxOccurs="10" name="REQUEST_1392_FIELDS" type="REQUEST_1392_FIELDS" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="REQUEST_1392_FIELDS">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x1392_SUPPORT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1392_EFF_FROM_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1392_SUPPORT_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1392_SUPPORT_ITEM" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="REQUEST_1192_FIELDS">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x1192_SUPPORT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1192_EFF_FROM_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1192_SUPPORT_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1192_SUPPORT_ITEM" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfREQUEST_1192_FIELDS_CollateralServicesContext_ICollateral_CreateCollateralTie_REQUEST_1192_FIELDS">
+     <xs:sequence>
+        <xs:element minOccurs="10" maxOccurs="10" name="REQUEST_1192_FIELDS" type="REQUEST_1192_FIELDS" />
+     </xs:sequence>
+  </xs:complexType>
+</xs:schema>

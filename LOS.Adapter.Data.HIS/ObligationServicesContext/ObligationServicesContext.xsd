@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://microsoft.com/HostApplications/TI/WIP" targetNamespace="http://microsoft.com/HostApplications/TI/WIP">
+  <xs:element name="ObligationServicesContext__Obligation__AssignObligationNumber__Request" nillable="true" type="TypeAssignObligationNumberRequest" />
+  <xs:element name="ObligationServicesContext__Obligation__AssignObligationNumber__Response" nillable="true" type="TypeAssignObligationNumberResponse" />
+  <xs:complexType name="TypeAssignObligationNumberRequest">
+    <xs:sequence>
+      <xs:element name="AssignObligationNumberInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeAssignObligationNumberResponse">
+    <xs:sequence>
+      <xs:element name="AssignObligationNumberOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="ObligationServicesContext__Obligation__CreateCurrentELOCSchedule__Request" nillable="true" type="TypeCreateCurrentELOCScheduleRequest" />
+  <xs:element name="ObligationServicesContext__Obligation__CreateCurrentELOCSchedule__Response" nillable="true" type="TypeCreateCurrentELOCScheduleResponse" />
+  <xs:complexType name="TypeCreateCurrentELOCScheduleRequest">
+    <xs:sequence>
+      <xs:element name="CreateCurrentELOCScheduleInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeCreateCurrentELOCScheduleResponse">
+    <xs:sequence>
+      <xs:element name="CreateCurrentELOCScheduleOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_INTEREST_SCHEDULES" type="ArrayOfx1350_INTEREST_SCHEDULES_ObligationServicesContext_IObligation_CreateCurrentELOCSchedule_x1350_INTEREST_SCHEDULES" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHEDULES" type="ArrayOfx1370_BILLING_SCHEDULES_ObligationServicesContext_IObligation_CreateCurrentELOCSchedule_x1370_BILLING_SCHEDULES" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHEDULES" type="ArrayOfx1360_PRIME_SCHEDULES_ObligationServicesContext_IObligation_CreateCurrentELOCSchedule_x1360_PRIME_SCHEDULES" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="ObligationServicesContext__Obligation__CreateCurrentFeeSchedule__Request" nillable="true" type="TypeCreateCurrentFeeScheduleRequest" />
+  <xs:element name="ObligationServicesContext__Obligation__CreateCurrentFeeSchedule__Response" nillable="true" type="TypeCreateCurrentFeeScheduleResponse" />
+  <xs:complexType name="TypeCreateCurrentFeeScheduleRequest">
+    <xs:sequence>
+      <xs:element name="CreateCurrentFeeScheduleInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_FEES" type="ArrayOfx1375_FEES_ObligationServicesContext_IObligation_CreateCurrentFeeSchedule_x1375_FEES" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeCreateCurrentFeeScheduleResponse">
+    <xs:sequence>
+      <xs:element name="CreateCurrentFeeScheduleOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_FEES" type="ArrayOfx1375_FEES_ObligationServicesContext_IObligation_CreateCurrentFeeSchedule_x1375_FEES" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfx1360_PRIME_SCHEDULES_ObligationServicesContext_IObligation_CreateCurrentELOCSchedule_x1360_PRIME_SCHEDULES">
+     <xs:sequence>
+        <xs:element minOccurs="20" maxOccurs="20" name="x1360_PRIME_SCHEDULES" type="x1360_PRIME_SCHEDULES" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfx1370_BILLING_SCHEDULES_ObligationServicesContext_IObligation_CreateCurrentELOCSchedule_x1370_BILLING_SCHEDULES">
+     <xs:sequence>
+        <xs:element minOccurs="40" maxOccurs="40" name="x1370_BILLING_SCHEDULES" type="x1370_BILLING_SCHEDULES" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="x1370_BILLING_SCHEDULES">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_CHARGE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_EFFECT_FROM" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_EFFECT_TO_DT" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_BILL_PERIOD" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_LEAD_DAYS" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_DUE_DATE" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_ACCRUE_TO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_METHOD_COLL" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_SPECIAL_MAIL" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCH_D_BILL_LMT" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCH_D_ACCR_LMT" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_MATURITY_MOC" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_AMOUNT_DUE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_REPAY_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_AMORTIZATIO_N_PRIORITY_C" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_CHARGE_ACCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1370_BILLING_SCHD_TRANSIT_NR" type="xs:integer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="x1375_FEES">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_CHARGE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_EFFECT_FROM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_EFFECT_TO_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_BASIS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_MEMO_ITEM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_EARN_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_FM_TIER_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_ACCRUAL_SCHD_IMA_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_BILL_PERIOD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_BILL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_LEAD_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_DUE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_METHOD_COLL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_CHARGE_ACCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_SPECIAL_MAIL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_TRANSIT_NR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1375_BILLING_SCHD_MATURITY_MOC" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfx1350_INTEREST_SCHEDULES_ObligationServicesContext_IObligation_CreateCurrentELOCSchedule_x1350_INTEREST_SCHEDULES">
+     <xs:sequence>
+        <xs:element minOccurs="20" maxOccurs="20" name="x1350_INTEREST_SCHEDULES" type="x1350_INTEREST_SCHEDULES" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfx1375_FEES_ObligationServicesContext_IObligation_CreateCurrentFeeSchedule_x1375_FEES">
+     <xs:sequence>
+        <xs:element minOccurs="20" maxOccurs="20" name="x1375_FEES" type="x1375_FEES" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="x1360_PRIME_SCHEDULES">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_CHARGE_CODE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_EFFECT_FROM" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_EFFECT_TO_DT" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_PRIME_NUMBER" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_CHANGE_DAY" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_VR_NO_OF_MOS" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_FLOOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_CEILING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_FACTOR_ONE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_RELATION_ONE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_FACTOR_TWO" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_RELATION_TWO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1360_PRIME_SCHD_ANNIV_DATE" type="xs:integer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="x1350_INTEREST_SCHEDULES">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_ACCRUAL_SCHD_CHARGE_CODE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_ACCRUAL_SCHD_EFFECT_FROM" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_ACCRUAL_SCHD_EFFECT_TO_DT" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_ACCRUAL_SCHD_BASIS" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_ACCRUAL_SCHD_RATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1350_ACCRUAL_SCHD_MEMO_ITEM" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

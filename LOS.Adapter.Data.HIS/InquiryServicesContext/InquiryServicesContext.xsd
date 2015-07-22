@@ -1,0 +1,2321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://microsoft.com/HostApplications/TI/WIP" targetNamespace="http://microsoft.com/HostApplications/TI/WIP">
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralForObligor__Request" nillable="true" type="TypeGetCollateralForObligorRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralForObligor__Response" nillable="true" type="TypeGetCollateralForObligorResponse" />
+  <xs:complexType name="TypeGetCollateralForObligorRequest">
+    <xs:sequence>
+      <xs:element name="GetCollateralForObligorInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_RESTRICTIONS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetCollateralForObligorResponse">
+    <xs:sequence>
+      <xs:element name="GetCollateralForObligorOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_RESTRICTIONS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_0189_FIELDS" type="ArrayOfREQUEST_0189_FIELD_InquiryServicesContext_IInquiryServices_GetCollateralForObligor_REQUEST_0189_FIELDS" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetPrimeRate__Request" nillable="true" type="TypeGetPrimeRateRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetPrimeRate__Response" nillable="true" type="TypeGetPrimeRateResponse" />
+  <xs:complexType name="TypeGetPrimeRateRequest">
+    <xs:sequence>
+      <xs:element name="GetPrimeRateInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_RATE_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_EFF_DATE" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetPrimeRateResponse">
+    <xs:sequence>
+      <xs:element name="GetPrimeRateOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_RATE_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_EFF_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_RATE" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetAccrualSchedules__Request" nillable="true" type="TypeGetAccrualSchedulesRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetAccrualSchedules__Response" nillable="true" type="TypeGetAccrualSchedulesResponse" />
+  <xs:complexType name="TypeGetAccrualSchedulesRequest">
+    <xs:sequence>
+      <xs:element name="GetAccrualSchedulesInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetAccrualSchedulesResponse">
+    <xs:sequence>
+      <xs:element name="GetAccrualSchedulesOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_131A_TABLE_000" type="ArrayOfLUW_131A_TABLE_000_InquiryServicesContext_IInquiryServices_GetAccrualSchedules_LUW_131A_TABLE_000" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_LINE24_MESSAGE" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetBillingSchedules__Request" nillable="true" type="TypeGetBillingSchedulesRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetBillingSchedules__Response" nillable="true" type="TypeGetBillingSchedulesResponse" />
+  <xs:complexType name="TypeGetBillingSchedulesRequest">
+    <xs:sequence>
+      <xs:element name="GetBillingSchedulesInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetBillingSchedulesResponse">
+    <xs:sequence>
+      <xs:element name="GetBillingSchedulesOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_133A_TABLE_000" type="ArrayOfLUW_133A_TABLE_000_InquiryServicesContext_IInquiryServices_GetBillingSchedules_LUW_133A_TABLE_000" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_LINE24_MESSAGE" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetPrincipleRepaymentSchedules__Request" nillable="true" type="TypeGetPrincipleRepaymentSchedulesRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetPrincipleRepaymentSchedules__Response" nillable="true" type="TypeGetPrincipleRepaymentSchedulesResponse" />
+  <xs:complexType name="TypeGetPrincipleRepaymentSchedulesRequest">
+    <xs:sequence>
+      <xs:element name="GetPrincipleRepaymentSchedulesInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetPrincipleRepaymentSchedulesResponse">
+    <xs:sequence>
+      <xs:element name="GetPrincipleRepaymentSchedulesOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_135A_TABLE_000" type="ArrayOfLUW_135A_TABLE_000_InquiryServicesContext_IInquiryServices_GetPrincipleRepaymentSchedules_LUW_135A_TABLE_000" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_LINE24_MESSAGE" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetIndirect__Request" nillable="true" type="TypeGetIndirectRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetIndirect__Response" nillable="true" type="TypeGetIndirectResponse" />
+  <xs:complexType name="TypeGetIndirectRequest">
+    <xs:sequence>
+      <xs:element name="GetIndirectInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetIndirectResponse">
+    <xs:sequence>
+      <xs:element name="GetIndirectOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_TABLE" type="ArrayOfLUW_152A_TABLE_InquiryServicesContext_IInquiryServices_GetIndirect_LUW_152A_TABLE" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetObligationSummary__Request" nillable="true" type="TypeGetObligationSummaryRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetObligationSummary__Response" nillable="true" type="TypeGetObligationSummaryResponse" />
+  <xs:complexType name="TypeGetObligationSummaryRequest">
+    <xs:sequence>
+      <xs:element name="GetObligationSummaryInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetObligationSummaryResponse">
+    <xs:sequence>
+      <xs:element name="GetObligationSummaryOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_105A_TABLE_00O" type="ArrayOfLUW_105A_TABLE_00O_InquiryServicesContext_IInquiryServices_GetObligationSummary_LUW_105A_TABLE_00O" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetPrimeSchedules__Request" nillable="true" type="TypeGetPrimeSchedulesRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetPrimeSchedules__Response" nillable="true" type="TypeGetPrimeSchedulesResponse" />
+  <xs:complexType name="TypeGetPrimeSchedulesRequest">
+    <xs:sequence>
+      <xs:element name="GetPrimeSchedulesInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetPrimeSchedulesResponse">
+    <xs:sequence>
+      <xs:element name="GetPrimeSchedulesOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_137A_TABLE_000" type="ArrayOfLUW_137A_TABLE_000_InquiryServicesContext_IInquiryServices_GetPrimeSchedules_LUW_137A_TABLE_000" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_LINE24_MESSAGE" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetAlternateNameAndAddress__Request" nillable="true" type="TypeGetAlternateNameAndAddressRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetAlternateNameAndAddress__Response" nillable="true" type="TypeGetAlternateNameAndAddressResponse" />
+  <xs:complexType name="TypeGetAlternateNameAndAddressRequest">
+    <xs:sequence>
+      <xs:element name="GetAlternateNameAndAddressInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetAlternateNameAndAddressResponse">
+    <xs:sequence>
+      <xs:element name="GetAlternateNameAndAddressOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_0101_FIELDS" type="ArrayOfREQUEST_0101_FIELDS_InquiryServicesContext_IInquiryServices_GetAlternateNameAndAddress_REQUEST_0101_FIELDS" />
+          <xs:element minOccurs="1" maxOccurs="1" name="REQUEST_0101_FIELDS_EXTRA" type="ArrayOfREQUEST_0101_ADD_FIELDS_InquiryServicesContext_IInquiryServices_GetAlternateNameAndAddress_REQUEST_0101_FIELDS_EXTRA" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralIndicative__Request" nillable="true" type="TypeGetCollateralIndicativeRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralIndicative__Response" nillable="true" type="TypeGetCollateralIndicativeResponse" />
+  <xs:complexType name="TypeGetCollateralIndicativeRequest">
+    <xs:sequence>
+      <xs:element name="GetCollateralIndicativeInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetCollateralIndicativeResponse">
+    <xs:sequence>
+      <xs:element name="GetCollateralIndicativeOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_COLL_VALUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_UNITS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_EXPIRE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_SECURITY_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_SAFEKP_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_ADV_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_MAX_LEND_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_DESCRIPT_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_DESCRIPT_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_FUNCTION_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_UNIT_PRICE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186A_COLL_TYPE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186B_USER_NUMERIC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186B_USER_CODE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186B_USER_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_INDICATIVE_DATA_YEAR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_MAKE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_MODEL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_SERIAL_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_PROPERTY_ADDRESS_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_PROPERTY_ADDRESS_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_CITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_STATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_ZIP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_IND_DATA_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186F_DISPOSITION_THREE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186G_CLI_LIEN_POSITION_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186G_CLI_LIEN_HOLDER_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186G_CLI_LIEN_AMOUNT_1" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186I_APPRAISAL_T_YPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186I_LAST_APPRAI_SAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x186I_LAST_APPRAI_SAL_AMT" type="xs:decimal" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralTies__Request" nillable="true" type="TypeGetCollateralTiesRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralTies__Response" nillable="true" type="TypeGetCollateralTiesResponse" />
+  <xs:complexType name="TypeGetCollateralTiesRequest">
+    <xs:sequence>
+      <xs:element name="GetCollateralTiesInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetCollateralTiesResponse">
+    <xs:sequence>
+      <xs:element name="GetCollateralTiesOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_OBLIGOR_SHORT_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_188A_TABLE_00O" type="ArrayOfLUW_188A_TABLE_00O_InquiryServicesContext_IInquiryServices_GetCollateralTies_LUW_188A_TABLE_00O" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetParticipations__Request" nillable="true" type="TypeGetParticipationsRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetParticipations__Response" nillable="true" type="TypeGetParticipationsResponse" />
+  <xs:complexType name="TypeGetParticipationsRequest">
+    <xs:sequence>
+      <xs:element name="GetParticipationsInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetParticipationsResponse">
+    <xs:sequence>
+      <xs:element name="GetParticipationsOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x141A_OBGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x141A_OBGAT" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetObligation__Request" nillable="true" type="TypeGetObligationRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetObligation__Response" nillable="true" type="TypeGetObligationResponse" />
+  <xs:complexType name="TypeGetObligationRequest">
+    <xs:sequence>
+      <xs:element name="GetObligationInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_RESTRICTIONS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetObligationResponse">
+    <xs:sequence>
+      <xs:element name="GetObligationOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_RESTRICTIONS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_PROC_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_EFF_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_MATUR_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_EST_MATUR_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_ORIG_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_CURR_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_AVAILABILITY" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_TKDOWN_OBLR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_TKDOWN_OBLN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_COMMITMENT_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PREPAY_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PREPAY_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_DUR_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_DUR_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_SECUR_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_SECUR_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_MARGIN_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_MARGIN_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_REG_UZ" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_REG_UZ_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_TAX_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_TAX_BANK_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_NOTE_RESET_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_NOTE_RESET_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_BILL_LIMIT_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_BILL_LIMIT_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_TRANS_NOTICE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_TRANS_NOTICE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_1098_INDICATOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_1098_INDICATOR_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ORIG_OBLN_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ORIG_OBLN_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_DATE_LAST_RENEWED" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_OPT_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_OPT_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_TOL_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_PD_OFF_NOTICE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_PD_OFF_NOTICE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_CONT_OFF" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_SERV_UNIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_ASSIGN_UNIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_FED_CLASS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_OBLN_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_PURPOSE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_GEN_LEDG" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_COLLAT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LCHG_PRM_REASON" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LCHG_FORMULA_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_SCHED_BAL_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_STAT_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_STAT_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZEN_STAT_FLAG" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZEN_STAT_FLAG_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_TYPE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_TYPE_1_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_CLASS_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_FACILITY_RISK_RATING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_DATE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_ORIG_TERM_MONTHS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_CREDIT_SCORE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_CREDIT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_COLLECTION_MONITOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_COLLECTION_MONITOR_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_ALT_NAME_ADR_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_CRA_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_RT_SITEID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_PROD_DEF_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_BILL_TYPE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_CODE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_DATE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_ALPHA" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_SPECIAL_CO__INDICATOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CREDIT_DESK_REF_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CASH_FLOW_RATIO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_LOAN_VALUE_RATIO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_REFERRING_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_SECONDARY_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_AFS_ALPHA_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CREDIT_SC_REF_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_ORIG_LTV_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_ORIG_LTV" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_REFERRING_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_UNDERWRITER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_USER_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_USER_CODE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SBA_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SBA_STATUS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SBA_GP_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SBA_PROGRAM_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_APPROVAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_APPROVAL_AMOUNT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_GUARANTEED_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_FTA_SERVIC_FEE_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SBA_SOURCE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SBA_OBGR_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SPEC_MAIL_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_DATE_SOLD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SETTLEMENT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SERVICE_FEE_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SERVICE_FEE_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SPREAD_PMT_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x1BAA_SPREAD_PMT_OPT_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_TITLE_CURR_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_POSTED_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_LAST_ACT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_LAST_CHG_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_GUAR_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_COLLAT_VALUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_PAID_TO_PRIN" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_USER_BALANCE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_BOOK_VALUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_SCHED_BALANCE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_PART_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_AMT_TKNDWN" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_NET_BOOK_VALUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_PROCEEDS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_NET_PRIN_TDY" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_NET_PARTS_TDY" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_NET_COLLAT_ACTIVITY" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_NET_INT_TDY" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_INTER_COMM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_R" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_RS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_RL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103A_LINE_23_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_PD_TO_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_LAST_BILL_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_PREV_DUE_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_PAID_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_PAID_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_PAID_NOT_BLD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_WAIVE_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_BILL_AGING_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_MTHLY_CUM_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_DATE_NEXT_DUE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PREV_YR_AVG_USE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_BLD_NT_PD_LT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_BLD_NOT_PAID" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PRIN_PAST_DUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_CAPITALIZED_INT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_DISC_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_MARGIN_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_REDISC_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_ACCR_LIMIT_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_FLOAT_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_RT_CHG_NOTICE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_CUST_EXP_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_EXCLUDE_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_LC_REF_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103B_PREPAY_PENALTY_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_RENEW_TIMES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_RENEW_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ORIG_MATUR_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ORIG_DISC_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_RENEW_PREV" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_RENEW_TO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_RENEWAL_POSTED_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_REFINANCED_FROM_OBLN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_REFINANCED_TO_OBLN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ASSUMED_FROM_OBGR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ASSUMED_TO_OBGR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ASSUMED_FROM_OBLN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_ASSUMED_TO_OBLN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_DATE_LAST_EXTEND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_TIMES_EXTEND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_MNTHS_EXTEND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_CLOSE_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_YESTERDAYS_CLOSE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_HI_ADV_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_IMA_TKDWN_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_FINAL_CLOSE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_FINAL_CLOSE_PRIN_ADJ" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_FINAL_CLOSE_POST_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_FINAL_CLOSE_PRIN_WVE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_WAIVE_EARN_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_NON_RESTART_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103C_OUT_DEBT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LAST_WEKLY_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LAST_DAILY_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_DIVISION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REGION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_SUB_LOB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_SIC_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_GEOG_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_PNLTY_FORMULA" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_GROUP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_MARKET" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_CNTL_BRK_U_HIERARCHY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_INDICATOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_BASIS_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_FREQ_MONTHS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_PRIORITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_NXT_SCHD_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LAST_REAM_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_PERIOD_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_CUST_NOTIFY_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REAM_ERR_EFF_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LAST_NOTICE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_CURR_BALLOON" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LAST_CHANGE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_ORIG_BALLOON" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_REDISCLOSE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_TERM_OUT_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_SCHED_BAL_ROUND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LEGAL_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_LEGAL_STATUS_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_ADVANCE_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_CURTAILMENT_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_UNAPPLIED_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_PMT_SPRD_SEQ" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103D_MATURITY_PMT_SPRD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_STAT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_CHG_OFF_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_NON_PERFM_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_CHARGE_OFF_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_CHG_OFF_RECOV" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_RECOVERY_AMT_ITD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_E_SUSP_AMORT_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_NON_PERFM_OVRD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_ACCRL_MNTR_FLAG" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_NON_PERFM_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_NON_ACCRL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_NON_ACCRL_OVRD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_REDUCED_RT_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_RENEG_FLAG" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZEN_STAT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZ_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZ_CHG_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZ_LEAD_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZ_AUTO_RESUM_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_FROZ_AUTO_RESUME_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_CHARGE_OFF_ITD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_IMPAIRMENT_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_IMPAIRMENT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_DATE_LAST_IMPAIRED" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_VALUATION_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_VALUATION_ALLOWANCE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_VALUATION_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_VALUATION_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_MARK_TO_MARKET_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_ORIG_SUSPENSE_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_LOST_INCOME_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_PAID_NON_ACCRL_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_LOST_INCOME_QTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103E_LOST_INCOME_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_PRIN_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_ORIG_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_AMT_TKDOWN" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_AMT_1" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_INT_OVER" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_TYPE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_CHG_OFF_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_CLASS_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_BKVAL_USER_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_DATE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_EXAM_AMT_2" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_COUP_POST_DATE_REPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_COUP_REPL_1ST_DUE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_COUP_REORDER_NUMB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_COUP_ORDER_FREQ" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_COUP_DATE_NEXT_ORDER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_NUMB_ORIG_PYMNTS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103F_OBLGN_XREF_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_PASTDUE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TOT_PAST_DUE_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_CURR_PAST_DUE_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_ADV_AFTER_MAT_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_PREV_COLLECT_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_CURR_COLLECT_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TIMES_IN_COLLECTION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_COLLECTION_UNIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_COLLECTION_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_PENALTY_BKVAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_PENALTY_CONV_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_RET_CHECK_CTR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TIMES_PAST_30_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TIMES_PAST_60_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_15_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_120_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TIMES_PAST_90_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_30_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_150_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TIMES_PAST_120_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_60_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_180_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_TIMES_PAST_150_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_DELINQ_90_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_MAT_TOLERANCE_PERCENT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_SETTLEMENT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_MAT_TOLERANCE_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_SETTLEMENT_PD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_LOAN_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_CUSIP_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_SNC_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103G_SNC_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_COLL_SHRTGE_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_CODE_1_TITLE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_COLL_SHRTGE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_DATE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_CODE_2_TITLE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_COLL_UNDERMARGIN_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_CODE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_COMP_BAL_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_SMSA_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_FIELD_1_TITLE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_USER_FIELD_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_CENSUS_TRACT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_HOEPA_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_RATE_SPRD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_PROPERTY_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_INCOME_REVENUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_PURCHASER_TP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_BUDGET_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_MASTER_DOC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_FC824" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_ACH_DELAY_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_FC826" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_DEFRD_DUE_DATE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_DEFRD_DUE_DATE_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_UNIT_ACCR_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_BALLOON_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_CONVERSION_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_MATUR_BILL_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_RISK_WEIGHT_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_TAX_EQUIV_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_OBLN_TAX_CLASS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_PRIN_OVERDUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_INT_OVERDUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_BILL_ALONE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_DEAL_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103H_NAICS_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_USER_OFFICER_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_USER_OFFICER_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_AFS_ALPHA_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_USER_OFFICER_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_AFS_ALPHA_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_USER_OFFICER_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_AFS_ALPHA_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_AFS_ALPHA_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_PREV_TKDWN_FROM_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_TIED_TO_POSTING_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_PREV_TKDWN_FROM_OBLIGAT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_UNTIED_FROM_POSTING_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_PREV_PROCESS_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ORIG_TIE_UNTIE_ACTIV_DAT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CRED_BUREAU_ASSOC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CRED_BUREAU_RPT_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CREDIT_SCORE_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CREDIT_SCORE_REF_NUM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CRED_BUREAU_STATUS_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CRED_CONS_INFO_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CRED_COMP_COND_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CRED_BUREAU_COMM_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ALT_REC_CD_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ALT_ASSOC_CD_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_DATE_LAST_PR_IN_PYMNT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ALT_REC_CD_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ALT_ASSOC_CD_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_CR_BUR_PAST_DUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ALT_REC_CD_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103K_ALT_ASSOC_CD_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CREDIT_SC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CREDIT_SC_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CREDIT_SC_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_DEBT_INCOME_RATIO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CURRENT_LTV" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_APPL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_DEBT_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CONTRACT_ADDS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_LC_CAP_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_PRODUCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CAMPAIGN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_PROGRAM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_APPL_SOURCE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_WORKPACKAGE_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_APPL_OVERRIDE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_WORKPACKAGE_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_FINAL_APPROVAL_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CREDIT_RVW_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_CREDIT_LST_REV_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_EXCEPT_APPROVAL_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103L_OCCUPANCY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_APPRAISAL_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_APPRAISER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_APPRAISAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_APPRAISAL_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_ORIG_RE_LTV" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_ORIG_RE_APPL_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_CURR_RE_LTV" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_CURR_RE_APPL_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_NUM_PROP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_OFF_SF" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_NUM_UNITS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_RES_SF" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_NUM_RES_ROOM" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_RETAIL_SF" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_COMM_SF" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_ACREAGE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_RENT_SF" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_TOT_BLDG_SF" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_FIRST_LIEN_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_LIEN_POSITION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_LIEN_HOLDER_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_OLD_LOAN_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103M_SYSTEM_CONV_FROM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_AFS_COMM_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_AFS_COMM_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_U_NUMERIC3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_ORIGINATING_RU" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_USER_STI_NUMERIC_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_LAST_REPRICE_INDEX" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_USER_STI_NUMERIC_B" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_CALL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_USER_ALPHA_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103N_COMMIT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_CONTIGUOUS_PROPERTY_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_ORIG_AMORTIZATION_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_LOAN_REN_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_MODIFICATION_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_RENEWAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_INDEX_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_ADV_NOTICE_PERIOD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_INDEX_RATE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REN_PAYMENT_TY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_INDEX_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_SECONDARY_FIN_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_MARGIN1" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_AMORTIZATION_TERM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_FEE_PERCENT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_BALLOON_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_FEE_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_CALL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_FEE_BAL_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_COMMENTS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_BANK1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGOR1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGATION1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_AMOUNT1" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_BANK2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGOR2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGATION2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_AMOUNT2" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_BANK3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGOR3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGATION3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_AMOUNT3" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_BANK4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGOR4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGATION4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_AMOUNT4" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_BANK5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGOR5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_OBLIGATION5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103O_REFI_AMOUNT5" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_TOTAL_EXPENSE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_LAST_FISCAL_YEAR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_NET_OPERATION_INCOME" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_FISCAL_YEAR_MONTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_TOTAL_DEBT_SERVICE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_DEBT_SERVICE_CHARGE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_GROSS_INCOME" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_EXPENSE_RATIO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_ROOM_EGI" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_RENT_ROLL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_SF_EGI" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_NOTE_RATE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_LOAN_GRADE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_CD_CC_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_SWAP_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_NON_RE_COLLATERAL_PERC" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_RE_COLLATERAL_PERCENT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_RE_LTV" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_LAST_INSPECT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_44XX_TOL_OVER_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_44XX_TOL_SHORT_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_44XX_TOL_OVER_PCT" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_44XX_TOL_SHORT_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_JAN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_FEB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_MAR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_APR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_MAY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_JUN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_JUL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_AUG" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_SEP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_OCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_NOV" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_PRE_DEC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_JAN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_FEB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_MAR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_APR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_MAY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_JUN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_JUL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_AUG" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_SEP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_OCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_NOV" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103P_PMT_CUR_DEC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_DATA_PRESENT_SW" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_YEAR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_MAKE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_MODEL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_SERIAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_ADDRESS_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_ADDRESS_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_CITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_STATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_ZIP_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_USER_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_USER_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_DATE_RECVD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_DATE_REL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_LOC_RECVD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_LOC_HELD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_DISPOSITION_ONE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_ID_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_DISPOSITION_TWO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_FILING_REF" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_DISPOSITION_THREE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_DESC_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_INDIC_DATA_DESC_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_REQ_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_STATUS_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_POLICY_NUMB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_STATUS_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_COMPANY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_EXP_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103I_PDI_AGENT_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_DATA_PRESENT_SW" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_FORE_ABAND_POST_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_FORE_ABAND_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_LIABILITY_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_OUTSTANDING_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_FORE_BID_PRICE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_APPRAISAL_VALUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_DESC_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_DESC_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_ODD_DAYS_INT_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_DAYS_TO_CHG_PAYOFF" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_ODD_DAYS_EARN_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_DAYS_TO_CHG_INS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_PART_PAYMENT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_NUMB_PAYMENTS_MADE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_AMT_FINANCED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_COLL_RECD_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_PREPAID_FIN_CHGS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_VARY_RATE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_APR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_APR_VERIF_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_78TH_EARN_DAY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_78TH_EARN_DAY_INS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x103J_12_MONTH_PYMNT_HIST" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetErrorMsg__Request" nillable="true" type="TypeGetErrorMsgRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetErrorMsg__Response" nillable="true" type="TypeGetErrorMsgResponse" />
+  <xs:complexType name="TypeGetErrorMsgRequest">
+    <xs:sequence>
+      <xs:element name="GetErrorMsgInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetErrorMsgResponse">
+    <xs:sequence>
+      <xs:element name="GetErrorMsgOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_EXCESS" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetObligor__Request" nillable="true" type="TypeGetObligorRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetObligor__Response" nillable="true" type="TypeGetObligorResponse" />
+  <xs:complexType name="TypeGetObligorRequest">
+    <xs:sequence>
+      <xs:element name="GetObligorInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetObligorResponse">
+    <xs:sequence>
+      <xs:element name="GetObligorOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_OBLIGOR_TYPE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CREDIT_RATING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_DATE_OF_CRED_RATING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_GEOGRAPHIC_CODE_1" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_GEOGRAPHIC_INDICATOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_OBLIGOR_TAX_CLASS" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_PERS_INCOME" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_HMDA_GENDER" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_HMDA_ETHNIC" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CENTRAL_FILE_REFERENCE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_CODE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_ASSIGNMENT_UNIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CONTACT_OFFICER" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_SERVICE_UNIT" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_STATEMENT_TYPE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_STATEMENT_FREQUENCY" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_DATE_OF_NEXT_STATEMENT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_ALPHA" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_CMS_IDENTIFIER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_NAICS" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_RECORD_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_NAME_CONT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_LST_ASSGN_ALT_REC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE_ONE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_CUSTOMER_GREETING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE_TWO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_AREA_CODE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_LOCAL_NUM_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_EXTENSION_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE_THREE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_AREA_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_LOCAL_NUM_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_EXTENSION_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE_FOUR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_TELEX_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE_FIVE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_CONTACT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE_SIX" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_SOCIAL_SECURITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_ADDRESS_LINE7" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_TAXID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_BIRTH_INC_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_OBLIGOR_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_OBLIGOR_SHORT_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_STATUS_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_STATUS_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_STATUS_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_LAST_FINANCL_STMT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CRED_RATING_SOURCE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CRED_RATING_SOURCE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_GEOGRAPHIC_IND_DESC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_BANK_TAX" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_BANK_TAX_CLASS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_GEOGRAPHIC_CODE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_FISCAL_YEAR_END_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_OBLIGOR_TAX_CLASS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_INTERLOCKING_DIRECTOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_INTERLOCK_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_BANK_ASSOC_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_BANK_ASSOC_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_AFFILIATED_RELATIONSHIP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_AFFILIATED_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_AFFILIATED_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_DUNS_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CRA_BUSINESS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CRA_BUSINESS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_STAND_METRO_STAT_AREA" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_1_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CRA_GENDER_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_CENSUS_TRACT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_2_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_PRIVACY_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_EMPLOYEE_OBLIGOR_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_3_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_ETHNICITY_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_4_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102A_RACE_5_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_DATE_ACCOUNT_OPENED" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_DATE_OF_LAST_CHANGE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_LAST_TRAN_JOURNAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_LAST_ACTIVE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_DATE_OF_LAST_ACTIVY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_MULT_SERVICE_UNIT_ACTIVTY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_MULT_BORROWS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_ACTIVE_OBLNS_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_ACTIVE_OBLNS_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_LAST_OBLIGAT_NR_ASSIGNED" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_OLD_OBLIGOR_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SYSTEM_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_STATEMENT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_STATEMENT_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_STATEMENT_FREQUENCY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_STATEMENT_FREQ_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_DATE_OF_NEXT_STATEMENT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SPECIAL_INFO_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SPECIAL_INFO_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SPEC_INFO_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SPL_INSTRUCT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SPECIAL_INFO_OFFICE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_SPL_INSTRUCT_OFFICER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_DATE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_DATE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_CODE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_NUMERIC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_USER_ALPHA" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_COLLECTION_MONITOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_COLLECT_MON_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_COLLECTION_TIMES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_PREV_COLLECT_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_PREV_COLL_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_CURR_COLLECT_STATUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102B_CURR_COLL_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CRED_RATING_SOURCE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYPE_1_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RATING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_DATE_OF_CRED_RATING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYP_E_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYPE_2_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_DATE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYP_E_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYPE_3_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_DATE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYP_E_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYPE_4_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_DATE_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYP_E_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RATING_TYPE_5_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_CREDIT_RAT_ING_DATE_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_SIC_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_1_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_2_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_3_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_4_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_5" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ADDL_NAICS_5_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_INDUSTRY_A_T_RISK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_INDUSTRY_A_T_RISK_PCT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_SOURCE_CHE_CKED" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_DATE_LAST_CHECKED" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RESULT_OF_CHECK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_RESULT_OF_CHK_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_COUNTRY_OF_CITIZEN_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_COUNTRY_OF_REGISTRATIO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_FOREIGN_PO_LITICAL_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_COUNTRY_OF_CITIZEN_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_US_CITIZEN_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102E_ASSET_SIZ_E" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_LOB_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_REGION_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_SUB_LOB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_GROUP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_MARKET" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_USER_HIERARCHY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_LANGUAGE_INDICATOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_FED_RESERVE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_STATEMENT_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_STATEMENT_FREQ_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_DDA_INTF_ACCOUNT_NUMB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_DDA_INTF_TRANSIT_NUMB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_PURGE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_PURGE_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_ACH_CONSOLID_ATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_ACH_CONSOL_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_SPECIAL_TYPE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_SPEC_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_HISTORY_REVIEW_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_HISTORY_REV_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_HISTORY_REVIEW_FREQ" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_HISTORY_REV_FREQ_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_DATE_NEXT_HIST_REVIEW" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_PRIMARY_DDA_ACCOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_DDA_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_DATE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_DATE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_CODE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_CODE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_NUMERIC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_CL_USER_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_ORGID_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_ORGID_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_NAME_ADD_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_NA_CR_BU_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102C_GTS_BASE_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_EXPOSURE_STRAT_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_EXPOSURE_STRAT_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_EXPOSURE_STRAT_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_CONTACT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_CONTACT_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_OBLIGOR_DESC_ONE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_OBLIGOR_DESC_TWO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_OBLIGOR_DESC_THREE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_AM_BEST_R_ATING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_AM_BEST_RATING_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_AM_BEST_F_IN_SIZE_CAT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_AM_BEST_FIN_CAT_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_STATE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_TAX_AUTHORTY_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_COUNTY_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_CHECK_OPT_ION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_TOWNSHIP_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_DISB_TAPE_FORMAT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALLMENT_MONTH_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALL_MO_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALLMENT_MONTH_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALL_MO_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALLMENT_MONTH_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALL_MO_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALLMENT_MONTH_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_INSTALL_MO_4" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_DISBURSEMENT_FREQUENCY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_TAX_LIEN_SALES_MONTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_TAX_LIEN_MONTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_STI_NUMERIC_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102D_STI_NUMERIC_B" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_OF_TIN_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_OF_TIN_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TIN_CERTIFIC_ATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TIN_CERT_DAT_E" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_OF_ID_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_1_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_ID_1_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_STATE_OF_ISSUANCE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_ISSUANCE_DAT_E_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_COUNTRY_OF_ISSUANCE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_EXPIRATION_D_ATE_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_OF_ID_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_2_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_ID_2_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_STATE_OF_ISSUANCE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_ISSUANCE_DAT_E_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_COUNTRY_OF_ISSUANCE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_EXPIRATION_D_ATE_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_OF_ID_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_TYPE_3_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_ID_3_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_STATE_OF_ISSUANCE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_ISSUANCE_DAT_E_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_COUNTRY_OF_ISSUANCE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102F_EXPIRATION_D_ATE_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102G_STOCK_EXCHANGE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102G_STOCK_TICKER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x102G_CUSIP_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_TIME_ZONE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_TIME_ZONE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_FAX_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_E_MAIL_ADDRESS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="L101_WEBSITE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_RECEIV_PLEDGED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_UNITS_PLEDGED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_RECEIV_ELIGIBLE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_UNITS_ELIGIBLE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_RECEIV_INELGIBLE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_UNITS_INELGIBLE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_CURR_VALUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_LAST_ACTIVE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_NET_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_LAST_ITEM_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_COLL_TOTAL_ITEMS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOTAL_ALL_FUTURES" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOTAL_ALL_UNUSED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOTAL_ALL_CURRENTS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOTAL_ALL_INTEREST_OUT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOTAL_ALL_INDIRECTS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOT_LATE_CHRG_DUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x110A_TOTAL_ALL_INSURANCE" type="xs:decimal" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCurrentFutureObligations__Request" nillable="true" type="TypeGetCurrentFutureObligationsRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCurrentFutureObligations__Response" nillable="true" type="TypeGetCurrentFutureObligationsResponse" />
+  <xs:complexType name="TypeGetCurrentFutureObligationsRequest">
+    <xs:sequence>
+      <xs:element name="GetCurrentFutureObligationsInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetCurrentFutureObligationsResponse">
+    <xs:sequence>
+      <xs:element name="GetCurrentFutureObligationsOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_TITLE_CURR_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_ENTRIES_IN_USE" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_TABLE" type="ArrayOfX121A_TAB_InquiryServicesContext_IInquiryServices_GetCurrentFutureObligations_X121A_TABLE" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralSupporting__Request" nillable="true" type="TypeGetCollateralSupportingRequest" />
+  <xs:element name="InquiryServicesContext__InquiryServices__GetCollateralSupporting__Response" nillable="true" type="TypeGetCollateralSupportingResponse" />
+  <xs:complexType name="TypeGetCollateralSupportingRequest">
+    <xs:sequence>
+      <xs:element name="GetCollateralSupportingInDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="TypeGetCollateralSupportingResponse">
+    <xs:sequence>
+      <xs:element name="GetCollateralSupportingOutDocument">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_REQUEST_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BATCH_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_BANK" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_OBLIGATION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ITEM_NBR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SEG_COUNTER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_HEADER_FILLER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_CALLING_APPL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_LENGTH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_ERROR_MESSAGES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_OBLIGOR_SHORT_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_TABLE" type="ArrayOfLUW_184A_TABLE_InquiryServicesContext_IInquiryServices_GetCollateralSupporting_LUW_184A_TABLE" />
+        </xs:sequence>
+      </xs:complexType>
+     </xs:element>
+     <xs:element name="TIClientContext" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+         <xs:attribute name="TIContextKeyword" type="xs:string"/>
+         <xs:attribute name="TIContextValue" type="xs:string"/>
+       </xs:complexType>
+     </xs:element>
+   </xs:sequence>
+   <xs:attribute name="TIAssemblyVersion" type="xs:string" default="1.0"/>
+  </xs:complexType>
+  <xs:complexType name="LUW_184A_TABLE">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_ITEM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_SERIAL_SECURITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_PRIORITY_NO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_DESCRIPTION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_MAKE_PIECES" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_MODEL_UNITS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_DT_RECV_EFF" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_PROP_OWNER_NUM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_PROP_OWNER_SNAM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_OBLR_LIT_REF_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_DT_RELS_EFF" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_COLL_CURR_AMT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_184A_OBGAT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfREQUEST_0101_FIELDS_InquiryServicesContext_IInquiryServices_GetAlternateNameAndAddress_REQUEST_0101_FIELDS">
+     <xs:sequence>
+        <xs:element minOccurs="23" maxOccurs="23" name="REQUEST_0101_FIELDS" type="REQUEST_0101_FIELDS" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_137A_TABLE_000_InquiryServicesContext_IInquiryServices_GetPrimeSchedules_LUW_137A_TABLE_000">
+     <xs:sequence>
+        <xs:element minOccurs="162" maxOccurs="162" name="LUW_137A_TABLE_000" type="LUW_137A_TABLE_000" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_152A_TABLE">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_OBGAT_NUMB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_PD_IND_OPT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_OBGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_EFF_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_EXP_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_REF_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_PCT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_LIMIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUW_152A_OBLIGOR_NAME" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_133A_TABLE_000_InquiryServicesContext_IInquiryServices_GetBillingSchedules_LUW_133A_TABLE_000">
+     <xs:sequence>
+        <xs:element minOccurs="142" maxOccurs="142" name="LUW_133A_TABLE_000" type="LUW_133A_TABLE_000" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_188A_TABLE_00O_InquiryServicesContext_IInquiryServices_GetCollateralTies_LUW_188A_TABLE_00O">
+     <xs:sequence>
+        <xs:element minOccurs="300" maxOccurs="300" name="LUW_188A_TABLE_00O" type="LUW_188A_TABLE_00O" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="REQUEST_0189_FIELD">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x189A_OBLN_ITEM" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x189A_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x189A_MODEL_DESC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x189A_DESC" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_184A_TABLE_InquiryServicesContext_IInquiryServices_GetCollateralSupporting_LUW_184A_TABLE">
+     <xs:sequence>
+        <xs:element minOccurs="162" maxOccurs="162" name="LUW_184A_TABLE" type="LUW_184A_TABLE" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_152A_TABLE_InquiryServicesContext_IInquiryServices_GetIndirect_LUW_152A_TABLE">
+     <xs:sequence>
+        <xs:element minOccurs="200" maxOccurs="200" name="LUW_152A_TABLE" type="LUW_152A_TABLE" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="REQUEST_0101_ADD_FIELDS">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_FAX_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_E_MAIL_ADDRESS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_WEBSITE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="REQUEST_0101_FIELDS">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_RECORD_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_NAME_CONT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_LST_ASSGN_ALT_REC" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE_ONE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_CUSTOMER_GREETING" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE_TWO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_TELEPHONE_NUMBER_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE_THREE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_TELEPHONE_NUMBER_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE_FOUR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_TELEX_NUMBER" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE_FIVE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_CONTACT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE_SIX" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_SOCIAL_SECURITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_ADDRESS_LINE7" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_TAXID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x0101_BIRTH_INC_DATE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_105A_TABLE_00O_InquiryServicesContext_IInquiryServices_GetObligationSummary_LUW_105A_TABLE_00O">
+     <xs:sequence>
+        <xs:element minOccurs="269" maxOccurs="269" name="LUW_105A_TABLE_00O" type="LUW_105A_TABLE_00O" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_131A_TABLE_000_InquiryServicesContext_IInquiryServices_GetAccrualSchedules_LUW_131A_TABLE_000">
+     <xs:sequence>
+        <xs:element minOccurs="152" maxOccurs="152" name="LUW_131A_TABLE_000" type="LUW_131A_TABLE_000" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfREQUEST_0101_ADD_FIELDS_InquiryServicesContext_IInquiryServices_GetAlternateNameAndAddress_REQUEST_0101_FIELDS_EXTRA">
+     <xs:sequence>
+        <xs:element minOccurs="23" maxOccurs="23" name="REQUEST_0101_ADD_FIELDS" type="REQUEST_0101_ADD_FIELDS" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_105A_TABLE_00O">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="LUWA_OBLN_NUMB" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUWA_PROC_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUWA_TAKEDOWN_OBLR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LUWA_TAKEDOWN_OBLN" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_133A_TABLE_000">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_CHG_CODE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_ACCR_LMT_CD_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_BILL_LMT_CD_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_EFF_FROM_DATE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_EFF_TO_DATE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_SPEC_MAIL_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_ACCRU_TO_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_DUE_DATE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_LEAD_DAYS_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_CUST_BILL_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_REPAY_TYPE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_COLL_METH_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_DDA_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_BILL_PER_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_TRANSIT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x133A_MAT_COLL_METH_A" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_131A_TABLE_000">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_CHARGE_CODE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_EFF_FM_DT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_EFF_TO_DT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_MEMO_ITEM_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_RATE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_BAL_TYPE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_FM_TIER_AMT_PCT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_EARN_TYPE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_TO_TIER_AMT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_BASIS_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x131A_TAX_CODE_A" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="X121A_TAB">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_HDG_CHG_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_HDR_TYPE_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_FROM_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_TO_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_MEMO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_MEMO_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_RATE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_BAL_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_BAL_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_2_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_FM_TIER" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_EARN_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_EARN_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_2_B" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_TO_TIER" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_BASIS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_BASIS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_2_C" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_TAX_IMA_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_TAX_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_AS_TAX_CODE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_3_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_FROM_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_TO_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_BILL_PERIOD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_BILL_PERIOD_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_3_B" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_BILL_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_LEAD_DAYS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_3_B2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_SPEC_MAIL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_3_B3" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_DUE_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_GRACE_PERIOD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_ACCR_TO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_CUST_BILL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_CUST_BILL_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_MAT_COLL_METH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_MAT_COLL_METH_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_COLL_METH" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_COLL_METH_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_DDA" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_TRANS_ID" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_EXT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_FILLER_3_D" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_REPAY_TP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_REPAY_TP_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_PRIORITY_CD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_BS_EXTEND_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_FROM_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_TO_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_PRIME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_ANNV_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_FLOOR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_CHG_DAY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_CHG_DAY_LIT_1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_CHG_DAY_LIT_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_CEILING" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_NBR_MNTHS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_ALT_CAL_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_ALT_CAL_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_FACTOR1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_FACTOR1_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_RELAT1" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_MOD_BUS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_REPOSITION" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_FACTOR2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_FACTOR2_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_RELAT2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121A_PS_BREAKAGE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_EARNED_ITD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_EARNED_BTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_EARNED_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_ADJ_EARN_BTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_EARNED_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_BILL_NOT_REC" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INT_ADJ_YTD_NOT_THIS_YR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_NEGATIVE_AMORT_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INT_ADJ_MTD_NOT_THIS_MO" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAST_DUE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_ORIG_SUSPEN_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAST_DUE_STS" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_PAST_DUE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INT_CHRG_OFF" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_START_BAL" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_ERD_SUSPENSE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_LAST_BILL_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_FILLER_01" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INT_ERND_IN_SUSPENSE_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INT_HDR_PREV_ACCR_TO_DTE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INT_ERND_IN_SUSPENSE_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PREV_DUE_DAT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_DEFERRED_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_DEFER_INCOME" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_DATE_PAID_TO" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAID_ITD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_DEF_EARN_DT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAID_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_ACCRUAL_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAID_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_DAILY_EARNS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PD_PRIOR_YR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_RECEIVABLE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAID_TO_PRIN" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_ADJ_TO_ITD_INCR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_PAID_SUSPENS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_ADJ_TO_ITD_DECR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_NON_ACCRL_PD_INCOME" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_ACC_ROUND" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_FILLER_23" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121B_INTEREST_BIL_ROUND" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_WAIVED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_REBATE_DSBUR" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_W_AIVED_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_ORIG_TERM" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_W_AIVED_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_REMAIN_TERM" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_PD_REPORTED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_ORIG_DISC" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INTEREST_PD_NOT_REPORTED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_HDR_POINTER_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_HDR_POINTER_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_FIELD_NAME" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INT_METHOD_DEFERRED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_FINAL_CLOSE_ADJ" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INT_PITD_NOT_RECOG" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_CLOSE_ADJ_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_CLOSE_ADJ_TYPE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_INT_CAPITALI_ZED" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_EARN_CLOSE_AMT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_FIELD_NAME_2" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_APR_EXCL_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_APR_EXCL_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_REBATE_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_REBATE_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_REBATE_METHOD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_REBATE_METHOD_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_RBTE_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_REBATE_BASE_RATE" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_RBTE_CHG_CD_IND" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_RBTE_CHG_CD_IND_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_EARNINGS_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_ANTICIP_ERNGS" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_RBTE_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_EARN_DAY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_EARN_DAY_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_RBTE_OVERRIDE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_RBTE_OVERRIDE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_EARN_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_NET_ACTIVITY_TODAY" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_UNACCR_MIN_EARN" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_ADD_ON_EARN_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_EARN_OVERRIDE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_MIN_EARN_OVERRIDE_LIT" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_NEXT_REPRICE_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121D_DELAY_DAYS" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_DATA_PRESENT_SW" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EVENT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EVENT_TYPE_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_PERIOD" type="xs:short" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_PERIOD_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_NXT_ASSESS_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_MIN_ASSESS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_MAX_ASSESS" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_OCCURS_CHARGE" type="xs:integer" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EDF_METHOD" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EDF_METHOD_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EDF_LMT_CODE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EDF_LMT_CODE_LITERAL" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_EDF_CHARGE" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_ASSESSED_ITD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_ASSESSED_YTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_ASSESSED_MTD" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="X121F_DATE_LST_ASSESS" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_188A_TABLE_00O">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_OBLIGOR" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_APP" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_OBLN" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_TYPE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_PRIORITY" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_DATE" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x188A_SUPPORT_CURR_AMT" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfREQUEST_0189_FIELD_InquiryServicesContext_IInquiryServices_GetCollateralForObligor_REQUEST_0189_FIELDS">
+     <xs:sequence>
+        <xs:element minOccurs="120" maxOccurs="120" name="REQUEST_0189_FIELD" type="REQUEST_0189_FIELD" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_137A_TABLE_000">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_CHG_CODE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_EFF_FROM_DATE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_EFF_TO_DATE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_PRIME_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_ANNV_DT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_FLOOR_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_CHANGE_DAY_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_CEILING_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_NBR_MNTHS_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_FACTOR1_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x137A_RELATION1_A" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LUW_135A_TABLE_000">
+    <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_CHG_CODE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_FM_DT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_TO_DT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_DUE_DT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_BILL_FREQ_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_LEAD_DAYS_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_BILL_LMT_CD_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_COLL_METH_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_MAT_COLL_METH_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_SPEC_MAIL_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_REPAY_TYPE_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_DDA_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_TRANSIT_A" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="x135A_AMT_DUE_A" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfLUW_135A_TABLE_000_InquiryServicesContext_IInquiryServices_GetPrincipleRepaymentSchedules_LUW_135A_TABLE_000">
+     <xs:sequence>
+        <xs:element minOccurs="147" maxOccurs="147" name="LUW_135A_TABLE_000" type="LUW_135A_TABLE_000" />
+     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfX121A_TAB_InquiryServicesContext_IInquiryServices_GetCurrentFutureObligations_X121A_TABLE">
+     <xs:sequence>
+        <xs:element minOccurs="14" maxOccurs="14" name="X121A_TAB" type="X121A_TAB" />
+     </xs:sequence>
+  </xs:complexType>
+</xs:schema>

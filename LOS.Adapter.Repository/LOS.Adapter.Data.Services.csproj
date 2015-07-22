@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ReferencePath>..\ReferenceAssemblies\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA86FF1D-2D1C-4749-B0AD-EACBEA135389}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LOS.Adapter.Data.Services</RootNamespace>
+    <AssemblyName>LOS.Adapter.Data.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BatchServicesContext">
+      <HintPath>..\LOS.Adapter.Data.HIS\BatchServicesContext\bin\BatchServicesContext.DLL</HintPath>
+    </Reference>
+    <Reference Include="CollateralServicesContext">
+      <HintPath>..\LOS.Adapter.Data.HIS\CollateralServicesContext\bin\CollateralServicesContext.DLL</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="InquiryServicesContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Loan Origination Modernization\LOS.Adapter\LOS.Adapter.Data.HIS\InquiryServicesContext\bin\InquiryServicesContext.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.HostIntegration.TI.ClientContext, Version=9.0.1000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.HostIntegration.TI.ClientContext.dll</HintPath>
+    </Reference>
+    <Reference Include="ObligationServicesContext">
+      <HintPath>..\LOS.Adapter.Data.HIS\ObligationServicesContext\bin\ObligationServicesContext.DLL</HintPath>
+    </Reference>
+    <Reference Include="ObligorServicesContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LOS.Adapter.Data.HIS\ObligorServicesContext\bin\ObligorServicesContext.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Extensions\ListExtension.cs" />
+    <Compile Include="Extensions\TaskExtension.cs" />
+    <Compile Include="Handler\Batch\OpenBatchHandler.cs" />
+    <Compile Include="Handler\Collateral\CreateCollateralTieHandler.cs" />
+    <Compile Include="Handler\Collateral\CreateCollateralHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetAccuralSchedulesHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetCollateralSupportingHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetCollateralTiesHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetCollateralIndicativeHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetObligationHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetObligationHeadersHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetObligationSummaryHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetObligorHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetPrimeRateHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetPrincipalRepaySchedulesHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetPrimeSchedulesHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetIndirectLiabilitiesHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetBillingSchedulesHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetParticipationsHandler.cs" />
+    <Compile Include="Handler\Inquiry\GetAlternateNameAndAddressHandler.cs" />
+    <Compile Include="Handler\Obligation\CreateCurrentFeeScheduleHandler.cs" />
+    <Compile Include="Handler\Obligation\AssignObligationNumberHandler.cs" />
+    <Compile Include="Handler\Obligor\CreateAlternateNameAndAddressHandler.cs" />
+    <Compile Include="Handler\Obligor\CreateObligorHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\IBatchRepository.cs" />
+    <Compile Include="Interface\ICollateralRepository.cs" />
+    <Compile Include="Interface\IInquiryRepository.cs" />
+    <Compile Include="Interface\IObligationRepository.cs" />
+    <Compile Include="Interface\IObligorRepository.cs" />
+    <Compile Include="Query\Base\BaseCommand.cs" />
+    <Compile Include="Query\Base\BaseRequest.cs" />
+    <Compile Include="Query\Collateral\CreateCollateralTieCommand.cs" />
+    <Compile Include="Query\Collateral\UpdateCollateralIndicativeCommand.cs" />
+    <Compile Include="Query\Collateral\UpdateCollateralCommand.cs" />
+    <Compile Include="Query\Collateral\CreateCollateralCommand.cs" />
+    <Compile Include="Query\Inquiry\GetCollateralSupportingRequest.cs" />
+    <Compile Include="Query\Inquiry\GetObligationHeadersRequest.cs" />
+    <Compile Include="Query\Inquiry\GetObligationSummaryRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Query\Inquiry\GetErrorMessageRequest.cs" />
+    <Compile Include="Query\Inquiry\GetRenewalBalanceRequest.cs" />
+    <Compile Include="Query\Inquiry\GetCollateralTiesRequest.cs" />
+    <Compile Include="Query\Inquiry\GetObligationRequest.cs" />
+    <Compile Include="Query\Inquiry\GetCollateralIndicativeRequest.cs" />
+    <Compile Include="Query\Inquiry\GetObligorRequest.cs" />
+    <Compile Include="Query\Inquiry\GetPrimeRateRequest.cs" />
+    <Compile Include="Query\Inquiry\GetPrimeSchedulesRequest.cs" />
+    <Compile Include="Query\Inquiry\GetPrincipalRepaySchedulesRequest.cs" />
+    <Compile Include="Query\Inquiry\GetBillingSchedulesRequest.cs" />
+    <Compile Include="Query\Inquiry\GetAccrualSchedulesRequest.cs" />
+    <Compile Include="Query\Inquiry\GetIndirectLiabilitiesRequest.cs" />
+    <Compile Include="Query\Inquiry\GetParticipationsRequest.cs" />
+    <Compile Include="Query\Inquiry\GetAlternateNameAndAddressRequest.cs" />
+    <Compile Include="Query\Inquiry\GetCollateralForObligorRequest.cs" />
+    <Compile Include="Query\Batch\OpenBatchCommand.cs" />
+    <Compile Include="Query\Obligation\AssignObligationNumberCommand.cs" />
+    <Compile Include="Query\Obligation\CreateAccruingFeeScheduleCommand.cs" />
+    <Compile Include="Query\Obligation\CreateELOCScheduleCommand.cs" />
+    <Compile Include="Query\Obligation\CreateCurrentFeeScheduleCommand.cs" />
+    <Compile Include="Query\Obligation\CreateFutureCommand.cs" />
+    <Compile Include="Query\Obligation\CreateIndirectCommand.cs" />
+    <Compile Include="Query\Obligation\CreateCurrentCommand.cs" />
+    <Compile Include="Query\Obligation\CreateELOCCommand.cs" />
+    <Compile Include="Query\Obligation\CreateFutureFeeScheduleCommand.cs" />
+    <Compile Include="Query\Obligation\RenewELOCCommand.cs" />
+    <Compile Include="Query\Obligation\RenewCurrentCommand.cs" />
+    <Compile Include="Query\Obligation\OffsetEntryCommand.cs" />
+    <Compile Include="Query\Obligation\RenewFutureCommand.cs" />
+    <Compile Include="Query\Obligor\CreateAlternateNameAndAddressCommand.cs" />
+    <Compile Include="Query\Obligor\CreateObligorCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Query\Obligor\UpdateAlternateNameAndAddressCommand.cs" />
+    <Compile Include="Query\Obligor\UpdateObligorIndicativeCommand.cs" />
+    <Compile Include="Query\Obligor\UpdateNameAndAddressCommand.cs" />
+    <Compile Include="Repository\BaseRepository.cs" />
+    <Compile Include="Repository\BatchRepository.cs" />
+    <Compile Include="Handler\Inquiry\GetCollateralForObligorHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\InquiryRepository.cs" />
+    <Compile Include="Repository\ObligationRepository.cs" />
+    <Compile Include="Repository\CollateralRepository.cs" />
+    <Compile Include="Repository\ObligorRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.HostIntegration.TI.ClientContext.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LOS.Adapter.CQS\LOS.Adapter.CQS.csproj">
+      <Project>{17d91889-302a-4ddf-9bd8-c1df04b549b8}</Project>
+      <Name>LOS.Adapter.CQS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="ObligationServicesContext" HostLanguage="System z COBOL" UUID="efb80b78-0060-4873-859a-f09dfdc3bee6" MajorVersion="1" MinorVersion="0" HasLegacyErrors="False" Debug="False" TypeRestriction="None" CallingModel="All" MethodStartCtxtHelpID="0" DelaySign="True" MethodHelpContextIDOffset="0" DLMODELFlag="False" ComponentBuilderVersion="9.00.2102">
+  <CustomProperty Name="TMEClass" Value="{7F4BA82E-54CC-451B-99B5-EAAD9BD0365F}" />
+  <CustomProperty Name="CodeGeneration" Value="3" />
+  <CustomProperty Name="InterfaceNamingConvention" Value="2" />
+  <CustomProperty Name="IntendedUse" Value="0" />
+  <CustomProperty Name="DotNET" Value="True" />
+  <CustomProperty Name="Server" Value="0" />
+  <Interface Name="IObligation" MajorVersion="2" MinorVersion="0" UUID="cd8ecf2d-e9e4-435e-b276-04642186782a">
+    <Method Name="AssignObligationNumber" ContextType="ClientContext">
+      <CustomProperty Name="MinimumBytesInReceive" Value="1325" />
+      <CustomProperty Name="MinimumBytesInSend" Value="1325" />
+      <CustomProperty Name="BytesInReceive" Value="1325" />
+      <CustomProperty Name="BytesInSend" Value="1325" />
+      <CustomProperty Name="RowCount" Value="0" />
+      <CustomProperty Name="InitialBufferValue" Value="256" />
+      <CustomProperty Name="Default390TranID" Value="LNLX" />
+      <MetaData DataTypeName="void" DispID="1" />
+      <Parameter Name="LUW_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_REQUEST_CODE" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BATCH_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BANK" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGOR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGATION" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ITEM_NBR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="5" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="SEG_COUNTER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_HEADER_FILLER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="18" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_CALLING_APPL" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_LENGTH" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ERROR_MESSAGES" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="1260" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+    </Method>
+    <Method Name="CreateCurrentELOCSchedule" ContextType="ClientContext">
+      <CustomProperty Name="MinimumBytesInReceive" Value="6909" />
+      <CustomProperty Name="MinimumBytesInSend" Value="1329" />
+      <CustomProperty Name="BytesInReceive" Value="6909" />
+      <CustomProperty Name="BytesInSend" Value="1329" />
+      <CustomProperty Name="RowCount" Value="0" />
+      <CustomProperty Name="InitialBufferValue" Value="256" />
+      <CustomProperty Name="Default390TranID" Value="LNLX" />
+      <MetaData DataTypeName="void" DispID="3" />
+      <Parameter Name="LUW_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_REQUEST_CODE" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BATCH_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BANK" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGOR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGATION" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ITEM_NBR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="5" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="SEG_COUNTER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_HEADER_FILLER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="18" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_CALLING_APPL" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_LENGTH" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="8" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ERROR_MESSAGES" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="1260" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x1350_INTEREST_SCHEDULES" IsByValue="True">
+        <CustomProperty Name="ArraySize" Value="20" />
+        <CustomProperty Name="ArrayDimensions" Value="1" />
+        <CustomProperty Name="RowCount" Value="1" />
+        <MetaData DataTypeName="x1350_INTEREST_SCHEDULES" IsArray="True" Direction="2" />
+      </Parameter>
+      <Parameter Name="x1370_BILLING_SCHEDULES" IsByValue="True">
+        <CustomProperty Name="ArraySize" Value="40" />
+        <CustomProperty Name="ArrayDimensions" Value="1" />
+        <CustomProperty Name="RowCount" Value="1" />
+        <MetaData DataTypeName="x1370_BILLING_SCHEDULES" IsArray="True" Direction="2" />
+      </Parameter>
+      <Parameter Name="x1360_PRIME_SCHEDULES" IsByValue="True">
+        <CustomProperty Name="ArraySize" Value="20" />
+        <CustomProperty Name="ArrayDimensions" Value="1" />
+        <CustomProperty Name="RowCount" Value="1" />
+        <MetaData DataTypeName="x1360_PRIME_SCHEDULES" IsArray="True" Direction="2" />
+      </Parameter>
+    </Method>
+    <Method Name="CreateCurrentFeeSchedule" ContextType="ClientContext">
+      <CustomProperty Name="MinimumBytesInReceive" Value="1325" />
+      <CustomProperty Name="MinimumBytesInSend" Value="1325" />
+      <CustomProperty Name="BytesInReceive" Value="3085" />
+      <CustomProperty Name="BytesInSend" Value="3085" />
+      <CustomProperty Name="RowCount" Value="0" />
+      <CustomProperty Name="InitialBufferValue" Value="256" />
+      <CustomProperty Name="Default390TranID" Value="LNLX" />
+      <MetaData DataTypeName="void" DispID="4" />
+      <Parameter Name="LUW_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_REQUEST_CODE" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BATCH_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BANK" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGOR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGATION" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ITEM_NBR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="5" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="SEG_COUNTER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_HEADER_FILLER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="18" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_CALLING_APPL" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_LENGTH" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ERROR_MESSAGES" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="1260" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x1375_FEES" IsByValue="True">
+        <CustomProperty Name="ArraySize" Value="20" />
+        <CustomProperty Name="ArrayDimensions" Value="1" />
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="IsVariableOut" Value="2" />
+        <CustomProperty Name="IsVariableIn" Value="1" />
+        <MetaData DataTypeName="x1375_FEES" IsArray="True" />
+      </Parameter>
+    </Method>
+  </Interface>
+  <Structures Name="Structures">
+    <Structure Name="x1350_INTEREST_SCHEDULES">
+      <CustomProperty Name="MinimumBytesInReceive" Value="30" />
+      <CustomProperty Name="MinimumBytesInSend" Value="30" />
+      <CustomProperty Name="BytesInReceive" Value="30" />
+      <CustomProperty Name="BytesInSend" Value="30" />
+      <CustomProperty Name="Structure" Value="0" />
+      <MetaData Version="1.0" />
+      <Member Name="x1350_ACCRUAL_SCHD_CHARGE_CODE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="3" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1350_ACCRUAL_SCHD_EFFECT_FROM">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1350_ACCRUAL_SCHD_EFFECT_TO_DT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1350_ACCRUAL_SCHD_BASIS">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1350_ACCRUAL_SCHD_RATE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="13" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1350_ACCRUAL_SCHD_MEMO_ITEM">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+    </Structure>
+    <Structure Name="x1370_BILLING_SCHEDULES">
+      <CustomProperty Name="MinimumBytesInReceive" Value="90" />
+      <CustomProperty Name="MinimumBytesInSend" Value="90" />
+      <CustomProperty Name="BytesInReceive" Value="90" />
+      <CustomProperty Name="BytesInSend" Value="90" />
+      <CustomProperty Name="Structure" Value="1" />
+      <MetaData Version="1.0" />
+      <Member Name="x1370_BILLING_SCHD_CHARGE_CODE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_EFFECT_FROM">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_EFFECT_TO_DT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_BILL_PERIOD">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_LEAD_DAYS">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="3" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_DUE_DATE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_ACCRUE_TO">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="6" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_METHOD_COLL">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="2" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_SPECIAL_MAIL">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="3" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCH_D_BILL_LMT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCH_D_ACCR_LMT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_MATURITY_MOC">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="2" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_AMOUNT_DUE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="20" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_REPAY_TYPE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="1" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_AMORTIZATIO_N_PRIORITY_C">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="3" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_CHARGE_ACCT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="17" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1370_BILLING_SCHD_TRANSIT_NR">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="9" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+    </Structure>
+    <Structure Name="x1360_PRIME_SCHEDULES">
+      <CustomProperty Name="MinimumBytesInReceive" Value="69" />
+      <CustomProperty Name="MinimumBytesInSend" Value="69" />
+      <CustomProperty Name="BytesInReceive" Value="69" />
+      <CustomProperty Name="BytesInSend" Value="69" />
+      <CustomProperty Name="Structure" Value="2" />
+      <MetaData Version="1.0" />
+      <Member Name="x1360_PRIME_SCHD_CHARGE_CODE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="3" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_EFFECT_FROM">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_EFFECT_TO_DT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_PRIME_NUMBER">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="5" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_CHANGE_DAY">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="2" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_VR_NO_OF_MOS">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="3" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_FLOOR">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="9" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_CEILING">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="9" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_FACTOR_ONE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_RELATION_ONE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="9" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_FACTOR_TWO">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="short" />
+        <Encoding RemoteDataType="13" Size="1" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_RELATION_TWO">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="9" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1360_PRIME_SCHD_ANNIV_DATE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <MetaData DataTypeName="long" />
+        <Encoding RemoteDataType="13" Size="6" Scale="0" Pad="1" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+    </Structure>
+    <Structure Name="x1375_FEES">
+      <CustomProperty Name="MinimumBytesInReceive" Value="88" />
+      <CustomProperty Name="MinimumBytesInSend" Value="88" />
+      <CustomProperty Name="BytesInReceive" Value="88" />
+      <CustomProperty Name="BytesInSend" Value="88" />
+      <CustomProperty Name="Structure" Value="3" />
+      <MetaData Version="1.0" />
+      <Member Name="x1375_ACCRUAL_SCHD_CHARGE_CODE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_EFFECT_FROM">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="6" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_EFFECT_TO_DT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="6" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_BASIS">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="1" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_MEMO_ITEM">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="1" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_EARN_TYPE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="1" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_FM_TIER_AMT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="20" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_ACCRUAL_SCHD_IMA_IND">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="1" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_BILL_PERIOD">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="1" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_BILL_DATE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="6" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_LEAD_DAYS">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_DUE_DATE">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="6" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_METHOD_COLL">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_CHARGE_ACCT">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="17" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_SPECIAL_MAIL">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_TRANSIT_NR">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="9" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+      <Member Name="x1375_BILLING_SCHD_MATURITY_MOC">
+        <CustomProperty Name="RowCount" Value="0" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Member>
+    </Structure>
+  </Structures>
+  <Unions Name="Unions" />
+  <RecordSets Name="DataTables" />
+  <InstanceData />
+</Library>

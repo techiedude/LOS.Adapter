@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="BatchServicesContext" HostLanguage="System z COBOL" UUID="7c015e26-2bb6-47ea-87e7-d2e34465af0b" MajorVersion="1" MinorVersion="0" HasLegacyErrors="False" Debug="False" TypeRestriction="None" CallingModel="All" MethodStartCtxtHelpID="0" DelaySign="True" MethodHelpContextIDOffset="0" DLMODELFlag="False" ComponentBuilderVersion="9.00.2102">
+  <CustomProperty Name="TMEClass" Value="{7F4BA82E-54CC-451B-99B5-EAAD9BD0365F}" />
+  <CustomProperty Name="CodeGeneration" Value="3" />
+  <CustomProperty Name="InterfaceNamingConvention" Value="2" />
+  <CustomProperty Name="IntendedUse" Value="0" />
+  <CustomProperty Name="DotNET" Value="True" />
+  <CustomProperty Name="Server" Value="0" />
+  <Interface Name="IBatchServices" MajorVersion="2" MinorVersion="0" UUID="82a52826-5c3f-42a7-9a29-ebf7b2397c34">
+    <Method Name="OpenBatch" ContextType="ClientContext">
+      <CustomProperty Name="MinimumBytesInReceive" Value="1417" />
+      <CustomProperty Name="MinimumBytesInSend" Value="1417" />
+      <CustomProperty Name="BytesInReceive" Value="1417" />
+      <CustomProperty Name="BytesInSend" Value="1417" />
+      <CustomProperty Name="RowCount" Value="0" />
+      <CustomProperty Name="InitialBufferValue" Value="256" />
+      <CustomProperty Name="Default390TranID" Value="LNLX" />
+      <MetaData DataTypeName="void" DispID="2" />
+      <Parameter Name="LUW_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_REQUEST_CODE" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BATCH_ID" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_BANK" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="2" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGOR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_OBLIGATION" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="10" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ITEM_NBR" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="5" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="SEG_COUNTER" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_HEADER_RESTRICTIONS" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="20" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_LENGTH" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="4" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="LUW_ERROR_MESSAGES" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="1260" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_ORIGIN_UNIT" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="5" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_ENTRY_DATE" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="6" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_DEBIT_TOTAL" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="20" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_CREDIT_TOTAL" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="20" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_NON_GL_TOTAL" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="20" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_COLLATERAL_UNITS" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="18" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+      <Parameter Name="x0970_NO_OF_TRANS" IsByValue="True">
+        <CustomProperty Name="RowCount" Value="1" />
+        <CustomProperty Name="StringWidth" Value="3" />
+        <MetaData DataTypeName="string" />
+        <Encoding RemoteDataType="5" Size="0" Scale="0" Pad="0" TRE="1" SOSI="0" Signed="1" SignPos="0" SignOvrpch="0" EmbNulls="0" />
+      </Parameter>
+    </Method>
+  </Interface>
+  <Structures Name="Structures" />
+  <Unions Name="Unions" />
+  <RecordSets Name="DataTables" />
+  <InstanceData />
+</Library>
